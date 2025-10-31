@@ -1,0 +1,78 @@
+import { Product } from '@/types/product';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Premium Tröja',
+    description: 'Bekväm och stilren tröja i högkvalitativt material. Perfekt för vardag och helger.',
+    price: 599,
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800',
+    category: 'kläder',
+    inStock: true,
+  },
+  {
+    id: '2',
+    name: 'Designer Jeans',
+    description: 'Klassiska jeans med modern passform. Slitagebeständiga och bekväma.',
+    price: 899,
+    image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800',
+    category: 'kläder',
+    inStock: true,
+  },
+  {
+    id: '3',
+    name: 'Läderhandväska',
+    description: 'Exklusiv läderhandväska med plats för allt du behöver. Tidslös design.',
+    price: 1299,
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800',
+    category: 'accessoarer',
+    inStock: true,
+  },
+  {
+    id: '4',
+    name: 'Sneakers',
+    description: 'Bekväma och stilrena sneakers för alla tillfällen. Perfekt komfort.',
+    price: 799,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800',
+    category: 'skor',
+    inStock: true,
+  },
+  {
+    id: '5',
+    name: 'Klocka',
+    description: 'Elegant armbandsur med svensk design. Perfekt för både formellt och casual.',
+    price: 1599,
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800',
+    category: 'accessoarer',
+    inStock: true,
+  },
+  {
+    id: '6',
+    name: 'Smycke Set',
+    description: 'Vackert smyckesset i silver. Innehåller örhängen, halsband och armband.',
+    price: 699,
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800',
+    category: 'accessoarer',
+    inStock: true,
+  },
+  {
+    id: '7',
+    name: 'Vinterjacka',
+    description: 'Varm och vattentät vinterjacka. Perfekt för kalla dagar.',
+    price: 1299,
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800',
+    category: 'kläder',
+    inStock: true,
+  },
+  {
+    id: '8',
+    name: 'Sportväska',
+    description: 'Praktisk sportväska med flera fack. Idealisk för träning och resor.',
+    price: 499,
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800',
+    category: 'accessoarer',
+    inStock: true,
+  },
+];
+
+export const categories = ['alla', 'kläder', 'skor', 'accessoarer'];
