@@ -19,9 +19,9 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl">
+    <div className="group relative overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-md transition-shadow hover:shadow-xl">
       <Link href={`/products/${product.id}`}>
-        <div className="aspect-square w-full overflow-hidden bg-gray-100">
+        <div className="aspect-square w-full overflow-hidden bg-gray-100 dark:bg-gray-700">
           <Image
             src={product.image}
             alt={product.name}
@@ -34,12 +34,12 @@ export default function ProductCard({ product }: ProductCardProps) {
       
       <div className="p-4">
         <Link href={`/products/${product.id}`}>
-          <h3 className="mb-1 text-lg font-semibold text-gray-900">{product.name}</h3>
-          <p className="mb-2 text-sm text-gray-600 line-clamp-2">{product.description}</p>
+          <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{product.name}</h3>
+          <p className="mb-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{product.description}</p>
         </Link>
         
         <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-gray-900">{product.price} kr</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">{product.price} kr</span>
           <button
             onClick={handleAddToCart}
             className="flex items-center space-x-2 rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"

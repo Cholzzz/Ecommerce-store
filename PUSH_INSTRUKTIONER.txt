@@ -1,0 +1,11 @@
+Kör dessa kommandon i terminalen:
+
+cd ~/ecommerce-store
+git push -u origin main
+
+När Git ber om autentisering:
+- Username: Cholzzz
+- Password: Använd en Personal Access Token (se instruktioner nedan)
+
+ELLER om webbläsaren öppnas automatiskt, logga in där!
+

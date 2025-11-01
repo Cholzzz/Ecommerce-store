@@ -13,10 +13,10 @@ export default function ProductPage() {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-gray-50 py-16">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-16 transition-colors">
         <div className="mx-auto max-w-7xl px-4 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Produkt hittades inte</h1>
-          <Link href="/products" className="mt-4 inline-block text-blue-600 hover:text-blue-700">
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Produkt hittades inte</h1>
+          <Link href="/products" className="mt-4 inline-block text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
             Tillbaka till produkter
           </Link>
         </div>
@@ -29,11 +29,11 @@ export default function ProductPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/products"
-          className="mb-8 inline-flex items-center text-gray-600 hover:text-gray-900"
+          className="mb-8 inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Tillbaka till produkter
@@ -41,7 +41,7 @@ export default function ProductPage() {
 
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Product Image */}
-          <div className="aspect-square overflow-hidden rounded-lg bg-white shadow-md">
+          <div className="aspect-square overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-md transition-colors">
             <Image
               src={product.image}
               alt={product.name}
@@ -53,12 +53,12 @@ export default function ProductPage() {
 
           {/* Product Info */}
           <div className="flex flex-col justify-center">
-            <h1 className="mb-4 text-4xl font-bold text-gray-900">{product.name}</h1>
-            <p className="mb-6 text-xl text-blue-600 font-semibold">{product.price} kr</p>
-            <p className="mb-8 text-lg text-gray-700 leading-relaxed">{product.description}</p>
+            <h1 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">{product.name}</h1>
+            <p className="mb-6 text-xl text-blue-600 dark:text-blue-400 font-semibold">{product.price} kr</p>
+            <p className="mb-8 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">{product.description}</p>
 
             <div className="mb-8">
-              <span className="inline-block rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-800">
+              <span className="inline-block rounded-full bg-green-100 dark:bg-green-900 px-4 py-2 text-sm font-semibold text-green-800 dark:text-green-200">
                 {product.inStock ? 'I lager' : 'Slutsåld'}
               </span>
             </div>
@@ -72,9 +72,9 @@ export default function ProductPage() {
               <span>Lägg i varukorg</span>
             </button>
 
-            <div className="mt-8 border-t pt-8">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">Produktinformation</h3>
-              <ul className="space-y-2 text-gray-600">
+            <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8">
+              <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Produktinformation</h3>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-400">
                 <li>
                   <strong>Kategori:</strong> {product.category}
                 </li>

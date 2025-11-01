@@ -34,8 +34,8 @@ export default function Home() {
       {/* Featured Products */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Utvalda produkter</h2>
-          <p className="mt-2 text-gray-600">Några av våra populäraste produkter</p>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Utvalda produkter</h2>
+          <p className="mt-2 text-gray-600 dark:text-gray-400">Några av våra populäraste produkter</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
