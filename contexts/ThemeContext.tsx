@@ -43,11 +43,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  // Förhindra flash av fel tema
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
+  // Alltid returnera provider, även innan mounted
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
